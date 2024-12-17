@@ -35,5 +35,17 @@ public class Main {
         System.out.println(pizza.getCalories());
         System.out.println(pizza.getPrice());
         System.out.println(pizza.isTomatoBase());
+        System.out.println("Fromages:");
+        for (Ingredient ingredient : pizza.getCheezeList()) {
+            System.out.println(ingredient.getName());
+        }
+        System.out.println("Protéines:");
+        for (Ingredient ingredient : pizza.getProteinList()) {
+            System.out.println(ingredient.getName());
+        }
+        System.out.println("Assaisonement:");
+        for (Ingredient ingredient : pizza.getSeasoningList()) {
+            System.out.println(ingredient.getName());
+        }
     }
 }
